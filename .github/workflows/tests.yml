@@ -30,7 +30,7 @@ jobs:
       run: |
         cd src
         bash run.sh -a
-          - name: Upload a Build Artifact
+    - name: Upload a Build Artifact
     - uses: actions/upload-artifact@v3.1.2
       with:
     # Artifact name
