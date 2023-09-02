@@ -30,13 +30,14 @@ jobs:
       run: |
         cd src
         bash run.sh -a
-    - name: Upload a Build Artifact
+
     - uses: actions/upload-artifact@v3.1.2
+    - name: Upload a Build Artifact
       with:
     # Artifact name
-         name: nms
+        name: nms
     # A file, directory or wildcard pattern that describes what to upload
-         path: ./target
+        path: ./target
   mac:
     name: Mac Test
     runs-on: macos-latest
